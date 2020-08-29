@@ -12,7 +12,7 @@ import random
 
 reddit = praw.Reddit(client_id='XXXXXXXXX',
                      client_secret="XXXXXXXXXXX", password='XXXXXXXXXXX',
-                     user_agent='XXXXXXXXXXX', username='XXXXXXXXXXX)
+                     user_agent='XXXXXXXXXXX', username='XXXXXXXXXXX')
 
 yourFate = ['Council Rick','1 Day Ban', '3 Day Ban', '7 Day Ban', '14 Day Ban', '30 Day Ban']
 messages = {
