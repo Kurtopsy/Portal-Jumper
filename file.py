@@ -14,14 +14,15 @@ reddit = praw.Reddit(client_id='XXXXXXXXX',
                      client_secret="XXXXXXXXXXX", password='XXXXXXXXXXX',
                      user_agent='XXXXXXXXXXX', username='XXXXXXXXXXX')
 
-yourFate = ['Council Rick','1 Day Ban', '3 Day Ban', '7 Day Ban', '14 Day Ban', '30 Day Ban']
+yourFate = ['Council Rick','1 Day Ban', '3 Day Ban', '7 Day Ban', '14 Day Ban', '30 Day Ban' , 'Nothing']
 messages = {
     "1 Day Ban": "You Teleported to Jerryboree (1 Day Ban)",
     "3 Day Ban": "You have Teleported to the Froopy Land and tommy has had his way with you (3 Day Ban)",
     "7 Day Ban": "You have Teleported to Matrix of Mortys (7 Day Ban)",
     "14 Day Ban": "You have Teleported to intergalactic Prison (14 Day Ban)",
     "30 Day Ban": "You have Teleported to the collectors menagerie (30 Day Ban)",
-    "Council Rick": "You Teleported to the Council Chamber and won a seat for a week"
+    "Council Rick": "You Teleported to the Council Chamber and won a seat for a week",
+    "Nothing": "You get nothing. You lose. Good day, sir."
 }
 
 
@@ -76,6 +77,6 @@ for comment in submission.comments.list():
                         print(comment.author.name + my_option + "\n")
                         comment.reply("[{}](https://masterofallscience.com/meme/S01E10/286036.jpg?b64lines=T05FIE9GIFVTCgoKCgoKCgoKCgoKCgpOT1cgR08gQ0xFQU4gVEhFIFRPSUxFVFM=) \n\n".format(my_option) + "***** \n\n " +  "^beep, ^boop. ^What ^is ^my ^purpose?")
                     else:
-                        comment.reply("You get nothing. You lose. Good day, sir." + "*****" +  "^beep, ^boop. ^What ^is ^my ^purpose?")
+                        comment.reply("You get nothing. You lose. Good day, sir. \n\n" + "***** \n\n" +  "^beep, ^boop. ^What ^is ^my ^purpose?")
                                    
 
