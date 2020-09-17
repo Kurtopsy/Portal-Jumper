@@ -54,7 +54,7 @@ for comment in submission.comments.list():
                     my_option = (messages[random.choice(yourFate)])
                     if my_option == "You Teleported to Jerryboree (1 Day Ban)":
                         print(comment.author.name + my_option + "\n")
-                        comment.reply("[{}](https://masterofallscience.com/meme/S02E02/82291.jpg?b64lines=WW91IFRlbGVwb3J0ZWQgdG8gSmVycnlib3JlZQoKCgoKCgoKCgoKCgoKKCAxIERheSBCYW4gKQ==) \n\n".format(my_option) + "***** \n\n " + "^beep, ^boop. ^What's ^my ^purpose?")
+                        comment.reply("[{}](https://masterofallscience.com/meme/S02E02/82291.jpg?b64lines=WW91IFRlbGVwb3J0ZWQgdG8gSmVycnlib3JlZQoKCgoKCgoKCgoKCgoKKCAxIERheSBCYW4gKQ==) \n\n".format(my_option) + "***** \n\n " + "^beep, ^boop. ^What ^is ^my ^purpose?")
                         reddit.subreddit('TempConvertBot').banned.add(comment.author.name, duration=1, ban_reason='Portal Jump', ban_message='Poor luck on the spin, but thanks for playing.', note='Portal Jump')
                     elif my_option == "You have Teleported to the Froopy Land and tommy has had his way with you (3 Day Ban)":
                         print(comment.author.name + my_option + "\n")
